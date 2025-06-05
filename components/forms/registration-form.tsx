@@ -179,7 +179,7 @@ export default function RegistrationForm() {
       }
 
       const result = await apiClient.register(registrationData)
-      toast.success("Registration successful! Check your email for confirmation.")
+      toast.success("Registration successful! Check email for confirmation.")
       console.log("Registration successful:", result)
       setCurrentStep(5) // Success step
     } catch (error) {
@@ -234,7 +234,7 @@ export default function RegistrationForm() {
               value={formData.leaderName}
               onChange={(e) => updateFormData("leaderName", e.target.value)}
               className="border-2 border-green-300 focus:border-green-500"
-              placeholder="Enter your full name"
+              placeholder="Enter full name"
             />
           </div>
           <div>
@@ -247,7 +247,7 @@ export default function RegistrationForm() {
               value={formData.leaderEmail}
               onChange={(e) => updateFormData("leaderEmail", e.target.value)}
               className="border-2 border-green-300 focus:border-green-500"
-              placeholder="Enter your email"
+              placeholder="Enter email"
             />
           </div>
         </div>
@@ -262,7 +262,7 @@ export default function RegistrationForm() {
               value={formData.leaderPhone}
               onChange={(e) => updateFormData("leaderPhone", e.target.value)}
               className="border-2 border-green-300 focus:border-green-500"
-              placeholder="Enter your phone number"
+              placeholder="Enter phone number"
             />
           </div>
           <div>
@@ -274,7 +274,7 @@ export default function RegistrationForm() {
               value={formData.collegeName}
               onChange={(e) => updateFormData("collegeName", e.target.value)}
               className="border-2 border-green-300 focus:border-green-500"
-              placeholder="Enter your institution name"
+              placeholder="Enter institution name"
             />
           </div>
         </div>
@@ -340,7 +340,7 @@ export default function RegistrationForm() {
             value={formData.teamName}
             onChange={(e) => updateFormData("teamName", e.target.value)}
             className="border-2 border-green-300 focus:border-green-500"
-            placeholder="Enter your team name"
+            placeholder="Enter team name"
           />
         </div>
 
@@ -409,8 +409,8 @@ export default function RegistrationForm() {
       </CardHeader>
       <CardContent className="space-y-6">
         <div>
-          <Label className="text-gray-700 font-semibold">Select Your Theme *</Label>
-          <p className="text-sm text-gray-600 mb-4">Choose the theme that aligns with your idea and passion</p>
+          <Label className="text-gray-700 font-semibold">Select Theme *</Label>
+          <p className="text-sm text-gray-600 mb-4">Choose the theme that aligns with idea and passion</p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {themes.map((theme) => (
               <Card
@@ -441,7 +441,7 @@ export default function RegistrationForm() {
               value={formData.whyThisTheme}
               onChange={(e) => updateFormData("whyThisTheme", e.target.value)}
               className="border-2 border-green-300 focus:border-green-500"
-              placeholder="Explain your motivation for choosing this theme..."
+              placeholder="Explain motivation for choosing this theme..."
               rows={3}
             />
           </div>
@@ -468,7 +468,7 @@ export default function RegistrationForm() {
             value={formData.ideaTitle}
             onChange={(e) => updateFormData("ideaTitle", e.target.value)}
             className="border-2 border-green-300 focus:border-green-500"
-            placeholder="Give your idea a catchy title"
+            placeholder="Give idea a catchy title"
           />
         </div>
 
@@ -481,7 +481,7 @@ export default function RegistrationForm() {
             value={formData.ideaDescription}
             onChange={(e) => updateFormData("ideaDescription", e.target.value)}
             className="border-2 border-green-300 focus:border-green-500"
-            placeholder="Provide a brief overview of your idea..."
+            placeholder="Provide a brief overview of idea..."
             rows={4}
           />
         </div>
@@ -509,7 +509,7 @@ export default function RegistrationForm() {
             value={formData.proposedSolution}
             onChange={(e) => updateFormData("proposedSolution", e.target.value)}
             className="border-2 border-green-300 focus:border-green-500"
-            placeholder="How will your idea solve the problem?"
+            placeholder="How will idea solve the problem?"
             rows={4}
           />
         </div>
@@ -523,7 +523,7 @@ export default function RegistrationForm() {
             value={formData.expectedImpact}
             onChange={(e) => updateFormData("expectedImpact", e.target.value)}
             className="border-2 border-green-300 focus:border-green-500"
-            placeholder="What impact do you expect your solution to have?"
+            placeholder="What impact do you expect solution to have?"
             rows={3}
           />
         </div>
@@ -562,7 +562,7 @@ export default function RegistrationForm() {
         <CheckCircle className="w-16 h-16 text-green-600 mx-auto mb-4" />
         <h2 className="text-3xl font-bold text-green-800 mb-4 retro-heading">Registration Successful!</h2>
         <p className="text-lg text-gray-700 mb-6">
-          Thank you for registering for the Sustainable Future Ideathon. We've received your submission and will contact
+          Thank you for registering for the Sustainable Future Ideathon. We've received submission and will contact
           you soon with further details.
         </p>
         <div className="bg-green-50 p-4 rounded-lg border-2 border-green-200">
