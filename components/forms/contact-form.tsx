@@ -104,7 +104,7 @@ export default function ContactForm() {
         <form onSubmit={handleSubmit} className="space-y-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
-              <Label htmlFor="name" className="text-gray-700 font-semibold flex items-center">
+              <Label htmlFor="name" className="text-gray-700 font-semibold flex items-center mb-2">
                 <User className="w-4 h-4 mr-2" />
                 Full Name *
               </Label>
@@ -119,7 +119,7 @@ export default function ContactForm() {
               />
             </div>
             <div>
-              <Label htmlFor="email" className="text-gray-700 font-semibold flex items-center">
+              <Label htmlFor="email" className="text-gray-700 font-semibold flex items-center mb-2">
                 <Mail className="w-4 h-4 mr-2" />
                 Email Address *
               </Label>
@@ -137,7 +137,7 @@ export default function ContactForm() {
           </div>
 
           <div>
-            <Label htmlFor="phone" className="text-gray-700 font-semibold flex items-center">
+            <Label htmlFor="phone" className="text-gray-700 font-semibold flex items-center mb-2">
               <Phone className="w-4 h-4 mr-2" />
               Phone Number (Optional)
             </Label>
@@ -153,7 +153,7 @@ export default function ContactForm() {
           </div>
 
           <div>
-            <Label htmlFor="message" className="text-gray-700 font-semibold flex items-center">
+            <Label htmlFor="message" className="text-gray-700 font-semibold flex items-center mb-2">
               <MessageSquare className="w-4 h-4 mr-2" />
               Message *
             </Label>

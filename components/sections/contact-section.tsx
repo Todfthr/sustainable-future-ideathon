@@ -17,15 +17,11 @@ export default function ContactSection() {
               {t("contact.title")}
             </h2>
             
-            <div className="grid grid-cols-1  gap-8">
-               {/* Contact Form */}
-               <div >
-                <ContactForm />
-              </div>
+            <div className="grid grid-cols-1 lg:grid-cols-2  gap-8">
               {/* Contact Information */}
-              <div className="space-y-8">
+              <div className="space-y-8 mb-2">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-                  <div className="flex flex-col items-center">
+                  <div className="flex flex-col items-center mb-2">
                     <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mb-4">
                       <Mail className="w-8 h-8 text-green-600" />
                     </div>
@@ -68,6 +64,10 @@ export default function ContactSection() {
                 </div>
               </div>
 
+  {/* Contact Form */}
+  <div >
+                <ContactForm />
+              </div>
              
             </div>
           </CardContent>

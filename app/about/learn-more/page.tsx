@@ -7,7 +7,6 @@ import { Lightbulb, Target, Globe, Leaf } from "lucide-react";
 import Image from "next/image";
 import { useLanguage } from "@/context/language-context";
 import Header from "@/components/layout/header";
-import OrganizerHeader from "@/components/layout/organizer-header";
 import Footer from "@/components/layout/footer";
 import { useRouter } from "next/navigation";
 
@@ -28,11 +27,10 @@ export default function AboutLearnMorePage() {
       </div>
 
       <div className="fixed top-0 w-full z-50">
-        <OrganizerHeader />
         <Header />
       </div>
 
-      <div className="pt-[180px]">
+      <div className="pt-[200px]">
         <div className="container mx-auto max-w-4xl relative z-10">
           <div className="space-y-8">
             {/* STIHUB Card */}
@@ -112,7 +110,7 @@ export default function AboutLearnMorePage() {
 
 
               {/* SDG Focus of the Ideathon */}
-              <div>
+              <div className="mb-8">
                 <h3 className="text-xl font-semibold mb-4 text-green-800 flex items-center">
                   <Target className="w-6 h-6 mr-2" />
                   SDG Focus of the Ideathon
@@ -146,7 +144,7 @@ export default function AboutLearnMorePage() {
                 </div>
               </div>
                                 {/* SDG12 Image */}
-                                <div className="relative w-full h-[400px] rounded-lg overflow-hidden mb-4">
+                                <div className="relative w-full h-[300px] rounded-lg overflow-hidden mb-4">
                   <Image
                     src="/Sustaianable Future SDG12.png"
                     alt="Sustainable Future SDG12"

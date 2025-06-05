@@ -175,7 +175,7 @@ export default function AdminUsersPage() {
               <UserCog className="h-12 w-12 text-gray-400 mx-auto mb-4" />
               <p className="text-gray-500">No admin users found</p>
               <Button onClick={handleCreateClick} className="mt-4">
-                Add your first admin
+                Add   first admin
               </Button>
             </div>
           ) : (

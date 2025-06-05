@@ -3,7 +3,6 @@
 import React from "react"
 import { useEffect, useState } from "react"
 import Header from "@/components/layout/header"
-import OrganizerHeader from "@/components/layout/organizer-header"
 import Footer from "@/components/layout/footer"
 import HeroSection from "@/components/sections/hero-section"
 import AboutSection from "@/components/sections/about-section"
@@ -39,7 +38,6 @@ export default function Home() {
       </div>
 
       <div className="fixed top-0 w-full z-50">
-        <OrganizerHeader />
         <Header />
       </div>
 
