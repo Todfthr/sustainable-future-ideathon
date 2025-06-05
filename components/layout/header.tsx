@@ -25,23 +25,16 @@ export default function Header() {
 
   const handleNavigation = (href: string) => {
     if (href.startsWith('/#')) {
-      const elementId = href.substring(2) // Remove '/#' from the href
-      const element = document.getElementById(elementId)
-      
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' })
-      } else {
-        // If element is not found, navigate to home and then scroll
-        router.push('/')
-        // Use requestAnimationFrame to ensure the DOM is updated
-        requestAnimationFrame(() => {
-          const element = document.getElementById(elementId)
-          if (element) {
-            element.scrollIntoView({ behavior: 'smooth' })
-          }
-        })
-      }
+      // For hash links, navigate to home page and then scroll
+      router.push('/')
+      setTimeout(() => {
+        const element = document.querySelector(href.substring(1))
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' })
+        }
+      }, 100)
     } else {
+      // For regular links, just navigate
       router.push(href)
     }
   }
