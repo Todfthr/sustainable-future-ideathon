@@ -34,7 +34,6 @@ export default function Home() {
         <div className="absolute top-3/4 left-1/2 w-64 h-64 bg-lime-200/30 rounded-full blur-3xl animate-pulse delay-2000"></div>
         {/* Retro geometric shapes */}
         <div className="absolute top-10 right-10 w-20 h-20 bg-green-300/20 rotate-45 animate-spin-slow"></div>
-        <div className="absolute bottom-20 left-20 w-16 h-16 bg-emerald-400/20 rounded-full animate-bounce-slow"></div>
       </div>
 
       <div className="fixed top-0 w-full z-50">
