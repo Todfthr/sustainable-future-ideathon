@@ -55,12 +55,12 @@ export default function Header() {
                   height={38}
                   className="h-10 w-10 mr-2 rounded-full"
                 />
-                <span className="text-2xl">IDEATHON</span>
+                <span className="text-lg md:hidden~">IDEATHON</span>
               </div>
             </div>
 
             {/* Desktop Navigation */}
-            <div className="hidden md:flex items-center space-x-8">
+            <div className="hidden lg:flex items-center space-x-8">
               {navItems.map((item) => (
                 <button
                   key={item.name}
@@ -75,7 +75,7 @@ export default function Header() {
             </div>
 
             {/* Mobile menu button */}
-            <div className="md:hidden flex items-center">
+            <div className="lg:hidden flex items-center">
               <LanguageSwitcher />
               <button
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
